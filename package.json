@@ -1,0 +1,24 @@
+{
+  "name": "tpill",
+  "version": "0.0.1",
+  "description": "MoNoApps Test Pill",
+  "main": "tpill.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MoNoApps/tpill.git"
+  },
+  "keywords": [
+    "mongodb",
+    "TPill",
+    "mna"
+  ],
+  "author": "Daniel Martinez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MoNoApps/tpill/issues"
+  },
+  "homepage": "https://github.com/MoNoApps/tpill"
+}
