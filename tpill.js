@@ -25,8 +25,8 @@ var TPill = function(time){
 */
 TPill.prototype.create = function(current, expected, name, strict) {
   this.LIST.push({
-    current: current || false,
-    expected: expected || false,
+    current: current,
+    expected: expected,
     name: name || false,
     strict: strict || false
   });
@@ -34,17 +34,9 @@ TPill.prototype.create = function(current, expected, name, strict) {
 
 TPill.prototype.assertEquals = function(test) {
   if (test.strict) {
-    if (test.current == test.expected) {
-      return true;
-    } else {
-      return false;
-    }
+    return (test.current === test.expected)
   } else {
-    if (test.current == test.expected) {
-      return true;
-    } else {
-      return false;
-    }
+    return (test.current == test.expected)
   }
 };
 
