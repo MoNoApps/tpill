@@ -4,10 +4,8 @@
 var TPill = function(time){
   this.CHECK_MARK =  String.fromCharCode(0x2713);
   this.BALLOT_X = String.fromCharCode(0x2717);
-  this.SURPRISE = String.fromCharCode(8264);
-  this.MESSAGES = {
-    stats: '\nStatistics:'
-  };
+  this.SURPRISE = String.fromCharCode(0x2726);
+  this.MESSAGES = { STATS: '\nStatistics:' };
   this.TIMEOUT = time || 0;
   this.STATS = {
     pass: 0,
@@ -34,9 +32,9 @@ TPill.prototype.create = function(current, expected, name, strict) {
 
 TPill.prototype.assertEquals = function(test) {
   if (test.strict) {
-    return (test.current === test.expected)
+    return (test.current === test.expected);
   } else {
-    return (test.current == test.expected)
+    return (test.current == test.expected);
   }
 };
 
@@ -64,7 +62,7 @@ TPill.prototype.run = function(cb) {
   }
 
   setTimeout(function () {
-    console.log(tpill.MESSAGES['stats'] + ' ' + JSON.stringify(tpill.STATS));
+    console.log(tpill.MESSAGES.STATS + ' ' + JSON.stringify(tpill.STATS));
     if (cb){
       cb();
     }
