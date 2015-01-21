@@ -1,6 +1,6 @@
 tpill
 =====
-Assertion synchronic test.
+Synchronous tests for assertions.
 
 install
 ===
