@@ -1,6 +1,6 @@
 tpill
 =====
-Assertion syncronic test.
+Assertion synchronic test.
 
 install
 ===
@@ -29,5 +29,7 @@ tpill.run(function(){
 
 api
 ===
+````js
 tpill.create(current, expected, testName, strict);
 tpill.run(callback);
+````
